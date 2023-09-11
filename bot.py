@@ -43,7 +43,7 @@ async def send_user_info_and_delete(message, username):
         create_time = get_user_create_time(data_json)
         change_name_time = get_last_change_name(data_json)
         region = get_account_region(data_json)
-        
+
         embed = discord.Embed(title=f"User Info for @{username}", color=int("9508d8", 16))
         embed.add_field(name="Nickname", value=name, inline=False)
         embed.add_field(name="User ID", value=user_id, inline=False)
@@ -57,7 +57,7 @@ async def send_user_info_and_delete(message, username):
         embed.add_field(name="secUid", value=f"||{sec_uid}||", inline=False)
         embed.set_image(url="https://cdn.discordapp.com/attachments/1132114368528666777/1133248161813626990/Banners_ideas.jpeg")
         embed.set_footer(text="Developed With 🤍By IDA", icon_url="https://cdn.discordapp.com/attachments/999170633546080357/1128721137489170555/cdf34faa832a5efeb9330c17b9c43699.png")
-        
+
 
         await message.channel.send(embed=embed, reference=message)
 
