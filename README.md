@@ -16,8 +16,8 @@
     ```
 - #### 🖥️ Starting
       1 - Git clone the repo
-      2 - Edit your Channel ID line line
-      3 - Edit your bot token in line
+      2 - Edit your Channel ID in line 18
+      3 - Edit your bot token in last line
       4 - Run The Bot and Enjoy
       
 ##  
